@@ -22,7 +22,7 @@ a{
 }
 
 .btn{
-    background-color: #ff5a1f;
+    background-color: orangered;
     color:white;
     padding: 12px 22px;
     border-radius: 8px;
@@ -63,7 +63,7 @@ header{
     color: #1a1a1a
 }
 .links a:hover {
-    color: #ff5a1f;
+    color: orangered;
 }
 
 .links select {
@@ -95,8 +95,8 @@ header{
 }
 
 /* === HERO ===*/
-.herp {
-    background-color: black;
+.hero {
+    background-color: white;
 }
 .hero-box{
     display: flex;
@@ -116,10 +116,11 @@ h1 {
     font-size: 64px;
     line-height: 1.1;
     margin-bottom: 20px;
+    color: black;
 }
 
 .orange {
-    color: #ff5a1f;
+    color: orangered;
  }
 
 .hero p {
@@ -137,7 +138,7 @@ h1 {
  .blob {
     position: absolute;
     border-radius: 50%;
-    background: #ff5a1f;
+    background: orangered;
     opacity: 0.3;
     filter: blur(40px);
  }
@@ -208,7 +209,7 @@ h1 {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: #ff5a1f;
+    background: orangered;
     color: #fff;
     font-size: 22px;
     display: flex;
@@ -227,14 +228,21 @@ h1 {
 .services-heading h2 {
     font-size: 40px;
     color: black;
+}
 
+.services-heading h5 {
+    background-color: orangered;
+    width: 5rem;
+    border-radius: 10px;
+    color: #fff;
+    margin: 2px auto 30px;
+    margin-bottom: .5rem;
 }
 
 .services-heading p{
-    border-top: 0.25rem solid #ff5a1f;
+    border-top: 0.25rem solid orangered;
     width: 5rem;
     margin: 2px auto 30px;
-
 }
 
 .services-container {
@@ -247,36 +255,25 @@ h1 {
     padding: 30px;
     border-radius: 10px;
     text-align: left;
-}
-
-.a {
-    background-image: url("image/webdevblu.png");
-}
-
-.b {
-    background-image: url("image/networkblu.png");
-}
-
-.c {
-    background-image: url("image/fiberblu.png");
+    border: 1px solid #E6E6E6;
 }
 
 .service-card h3 {
     font-size: 22px;
     margin-bottom: 15px;
-    color: #fff;
+    color: black;
 }
 
 .service-card p {
     line-height: 1.6;
-    color: #fff;
+    color: black;
 }
 
 .service-card a {
     display: inline-block;
     margin-top: 15px;
     text-decoration: none;
-    color: #ff5a1f;
+    color: orangered;
 }
 
 /* ===== ABOUT ===== */
@@ -346,4 +343,654 @@ h1 {
 
 .experience-container {
     padding: 50px;
+}
+
+/* ===== SATISFIED CLIENTS ===== */
+.client-card {
+    padding: 80px;
+}
+
+.clients-container {
+    background-color: black;
+    color: white;
+    padding-bottom: 80px;
+}
+
+.client-card h5 {
+    color: #fff;
+    background-color: orangered;
+    border-radius: 20px;
+    width: 110px;
+    margin-bottom: .5rem;
+    margin: 2px auto 30px;
+    padding-top: .25rem;
+    padding-bottom: .30rem;
+    font-size: .75rem;
+    text-align: center;
+    height: 25px;
+}
+
+.client-card h2 {
+    text-align: center;
+    font-size: 2.30rem;
+    color: #fff;
+    line-height: 2.5rem;
+}
+
+.text-area p {
+    color: #fff;
+}
+
+.stat h3{
+    font-size: 60px;
+    margin-bottom: 7px;
+
+}
+
+.stat p {
+    font-size: 20px;
+}
+
+/* ===== WORKS ===== */
+.works h5 {
+    color: #fff;
+    background-color: orangered;
+    border: 20px;
+    width: 5rem;
+    text-align: center;
+    border-radius: 20px;
+    margin: 2px auto 30px;
+    margin-bottom: .5rem;
+    padding-top: .25rem;
+    padding-bottom: .30rem;
+    font-size: .75rem;
+}
+.work-container {
+    padding: 80px;
+    background-color: #121212;
+}
+
+.works h3 {
+    text-align: center;
+    color: white;
+    font-size: 1.95rem;
+    line-height: 2.5rem;
+    padding: 15px;
+}
+
+.works p {
+    border-top: 0.25rem solid orangered;
+    width: 3rem;
+    margin: 2px auto 30px;
+}
+
+.stage-num h3 {
+    width: 70px;
+    height: 70px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.stage-num p {
+    color: #fff;
+    padding-top: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.stage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 26px;
+    padding-left: 180px;
+}
+
+/* ===== CHOOSE ME ===== */
+.why-choose-me {
+    background: white;
+    padding: 35px 0 100px;
+}
+
+.why-container {
+    width: 78%;
+    margin: auto;
+    padding: 50px;
+}
+
+.why-label {
+    width: 7rem;
+    margin: 2px auto 30px;
+    margin-bottom: .5rem;
+    background-color: orangered;
+    color: white;
+    padding-top: .25rem;
+    padding-bottom: .30rem;
+    border: 20px;
+    border-radius: 20px;
+    font-size: .75rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.why-container h1 {
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #050505;
+    margin: 0 0 75px;
+}
+
+.why-container p {
+    color: #687585;
+    font-size: 19px;
+    line-height: 1.6;
+    margin-bottom: 60px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.skill-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.skill-title span:first-child {
+    color: #080808;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.skill-title span:last-child {
+    color: orangered;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #f1f1f1;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress {
+    width: 95%;
+    height: 100%;
+    background: orangered;
+    border-radius: 20px;
+}
+
+@media (max-width: 800px) {
+
+    .why-container {
+        width: 85%;
+    }
+
+    .why-container h3 {
+        font-size: 36px;
+    }
+
+    .why-container > p {
+        font-size: 19px;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+}
+
+/* ===== MY WORKS ===== */
+.works-heading h5 {
+    color: #fff;
+    background-color: orangered;
+    border: 20px;
+    width: 4rem;
+    text-align: center;
+    border-radius: 20px;
+    margin: 2px auto 30px;
+    margin-bottom: .5rem;
+    padding-top: .25rem;
+    padding-bottom: .30rem;
+    font-size: .80rem;
+}
+
+.works-heading h3 {
+    text-align: center;
+    color: black;
+    font-size: 2.1rem;
+    line-height: 2.5rem;
+    padding: 15px;
+}
+
+/* ================= CARDS ================= */
+.works-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Card */
+.work-card {
+    background: white;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+/* Image */
+
+.work-image {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.work-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Orange Arrow */
+.work-arrow {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: orangered;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.work-arrow:hover {
+    background: #000000;
+}
+
+/* ================= CARD INFORMATION ================= */
+
+.work-info {
+    padding: 15px;
+}
+
+.work-info span {
+    display: inline-block;
+    background: #fff0eb;
+    color: orangered;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.work-info h2 {
+    margin: 15px 0 0;
+    font-size: 20px;
+    font-weight: 580;
+    color: #080808;
+}
+
+/* ================= TESTIMONIAL ================= */
+.testimonials {
+    background: #ffffff;
+    padding: 35px;
+}
+
+/* ================= HEADER ================= */
+.testimonial-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 80px;
+    padding-top: 7rem;
+}
+
+.testimonial-label {
+    display: inline-block;
+    background: orangered;
+    color: white;
+    padding: 5px;
+    border: 20px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.testimonial-header h1 {
+    margin: 20px 0 0;
+    font-size: 48px;
+    font-weight: 700;
+    color: #050505;
+}
+
+/* ================= SLIDER BUTTONS ================= */
+.slider-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.slider-buttons button {
+    width: 52px;
+    height: 52px;
+    border: 1px solid #e2e2e2;
+    background: white;
+    border-radius: 50%;
+    font-size: 28px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-buttons button:hover {
+    background: orangered;
+    color: white;
+    border-color: orangered;
+}
+
+/* ================= TESTIMONIAL CARDS ================= */
+.testimonial-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.testimonial-card {
+    position: relative;
+    max-height: 340px;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    padding: 62px;
+    box-sizing: border-box;
+}
+
+/* ================= QUOTE ================= */
+.quote {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 90px;
+    line-height: 1;
+    color: #ffd8cc;
+    font-family: Georgia, serif;
+    font-weight: bold;
+}
+
+/* ================= CLIENT NAME ================= */
+.testimonial-card h2 {
+    margin: 0 0 12px;
+    color: #080808;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* ================= SERVICE LABEL ================= */
+.service-label {
+    display: inline-block;
+    background: #fff0eb;
+    color: orangered;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+
+/* ================= TESTIMONIAL TEXT ================= */
+.testimonial-card p {
+    color: #687585;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 650px;
+}
+
+/* ================= STARS ================= */
+.stars {
+    margin-top: 20px;
+    color: orangered;
+    font-size: 27px;
+    letter-spacing: 1px;
+}
+
+/* ================= FAQ SECTION ================= */
+.faq-section {
+    background: #ffffff;
+    padding: 70px;
+}
+
+/* ================= FAQ HEADING ================= */
+.faq-heading {
+    text-align: center;
+    margin-bottom: 80px;
+    padding-top: 7rem;
+}
+
+.faq-heading span {
+    display: inline-block;
+    background: orangered;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.faq-heading h1 {
+    margin: 20px;
+    color: #050505;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.faq-line {
+    width: 80px;
+    height: 4px;
+    background: orangered;
+    margin: auto;
+}
+
+/* ================= FAQ CONTAINER ================= */
+.faq-container {
+    width: 71%;
+    max-width: 1300px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* ================= FAQ CARD ================= */
+.faq-card {
+    max-height: 170px;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    padding: 32px 60px;
+    box-sizing: border-box;
+}
+
+/* ================= QUESTION ================= */
+.faq-question {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.question-left {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+}
+
+/* Question circle */
+.question-icon {
+    width: 25px;
+    height: 25px;
+    min-width: 25px;
+    border: 3px solid #111;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #111;
+    margin-top: 2px;
+}
+
+/* Question text */
+.faq-question h3 {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #080808;
+}
+
+/* Plus / X */
+.faq-symbol {
+    color: orangered;
+    font-size: 29px;
+    line-height: 1;
+    font-weight: 300;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background: #111111;
+    color: white;
+}
+
+/* ================= FOOTER CONTAINER ================= */
+.footer-container {
+    width: 88%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr 1.1fr;
+    gap: 70px;
+    padding: 70px 0 30px;
+}
+
+/* ================= COLUMN HEADINGS ================= */
+.footer-column h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer-line {
+    width: 62px;
+    height: 5px;
+    background: #ff480f;
+    margin-top: 12px;
+    margin-bottom: 25px;
+}
+
+/* ================= ABOUT TEXT ================= */
+.footer-column > p {
+    color: #d1d1d1;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 500px;
+}
+
+/* ================= USEFUL LINKS ================= */
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 18px;
+}
+
+.footer-column ul li a {
+    color: #d1d1d1;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-column ul li a::before {
+    content: "›";
+    color: orangered;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.footer-column ul li a:hover {
+    color: orangered;
+}
+
+/* ================= SOCIAL ICONS ================= */
+.footer-social {
+    display: flex;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.footer-social a {
+    text-decoration: none;
+    font-size: 35px;
+}
+
+.whatsapp-icon {
+    color: #20d66b;
+}
+
+.close-icon {
+    color: #aaaaaa;
+}
+
+/* ================= CONTACT INFO ================= */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.contact-item span {
+    color: orangered;
+    font-size: 20px;
+    width: 23px;
+}
+
+.contact-item p {
+    margin: 0;
+    color: #d1d1d1;
+    font-size: 20px;
+}
+
+/* ================= COPYRIGHT ================= */
+.copyright {
+    border-top: 1px solid #292929;
+    text-align: center;
+    padding: 32px;
+    color: #bdbdbd;
+    font-size: 20px;
 }
