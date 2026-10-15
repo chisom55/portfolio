@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background:  #fff;
+    color: black;
+    line-height: 1.6;
+}
+
+.home {
+    background-color: rgb(71 85 105);
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+}
+
+.home-content h1 {
+    text-align: center;
+    color: white;
+}
+
+.home-content p {
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* ===== MY WORKS ===== */
+.my-works {
+    padding: 35px 0 100px;
+}
+.works-heading h5 {
+    color: #fff;
+    background-color: orangered;
+    border: 20px;
+    width: 4rem;
+    text-align: center;
+    border-radius: 20px;
+    margin: 2px auto 30px;
+    margin-bottom: .5rem;
+    padding-top: .25rem;
+    padding-bottom: .30rem;
+    font-size: .80rem;
+}
+
+.works-heading h3 {
+    text-align: center;
+    color: black;
+    font-size: 2.1rem;
+    line-height: 2.5rem;
+    padding: 15px;
+}
+
+/* ================= CARDS ================= */
+.works-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Card */
+.work-card {
+    background: white;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+/* Image */
+
+.work-image {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.work-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Orange Arrow */
+.work-arrow {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: orangered;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.work-arrow:hover {
+    background: #000000;
+}
+
+/* ================= CARD INFORMATION ================= */
+
+.work-info {
+    padding: 15px;
+}
+
+.work-info span {
+    display: inline-block;
+    background: #fff0eb;
+    color: orangered;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.work-info h2 {
+    margin: 15px 0 0;
+    font-size: 20px;
+    font-weight: 580;
+    color: #080808;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background: #111111;
+    color: white;
+}
+
+/* ================= FOOTER CONTAINER ================= */
+.footer-container {
+    width: 88%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr 1.1fr;
+    gap: 70px;
+    padding: 70px 0 30px;
+}
+
+/* ================= COLUMN HEADINGS ================= */
+.footer-column h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer-line {
+    width: 62px;
+    height: 5px;
+    background: #ff480f;
+    margin-top: 12px;
+    margin-bottom: 25px;
+}
+
+/* ================= ABOUT TEXT ================= */
+.footer-column > p {
+    color: #d1d1d1;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 500px;
+}
+
+/* ================= USEFUL LINKS ================= */
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 18px;
+}
+
+.footer-column ul li a {
+    color: #d1d1d1;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-column ul li a::before {
+    content: "›";
+    color: orangered;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.footer-column ul li a:hover {
+    color: orangered;
+}
+
+/* ================= SOCIAL ICONS ================= */
+.footer-social {
+    display: flex;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.footer-social a {
+    text-decoration: none;
+    font-size: 35px;
+}
+
+.whatsapp-icon {
+    color: #20d66b;
+}
+
+.close-icon {
+    color: #aaaaaa;
+}
+
+/* ================= CONTACT INFO ================= */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.contact-item span {
+    color: orangered;
+    font-size: 20px;
+    width: 23px;
+}
+
+.contact-item p {
+    margin: 0;
+    color: #d1d1d1;
+    font-size: 20px;
+}
+
+/* ================= COPYRIGHT ================= */
+.copyright {
+    border-top: 1px solid #292929;
+    text-align: center;
+    padding: 32px;
+    color: #bdbdbd;
+    font-size: 20px;
+}
+
+/* ================= TABLET ======================== */
+
+@media (max-width: 900px) {
+
+    .works-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 45px;
+        padding: 60px 0 30px;
+    }
+
+    .home {
+        padding: 8rem 20px;
+    }
+
+    .work-image {
+        height: 220px;
+    }
+
+    .contact-item p {
+        font-size: 17px;
+    }
+}
+
+/* ================= PHONE ========================= */
+
+@media (max-width: 600px) {
+
+    /* HOME */
+
+    .home {
+        padding: 6rem 15px;
+    }
+
+    .home-content h1 {
+        font-size: 2rem;
+    }
+
+    .home-content p {
+        font-size: 1rem;
+    }
+
+    /* MY WORKS */
+
+    .my-works {
+        padding: 30px 15px 70px;
+    }
+
+    .works-heading h3 {
+        font-size: 1.7rem;
+        padding: 10px;
+    }
+
+    .works-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .work-image {
+        height: 220px;
+    }
+
+    .work-arrow {
+        width: 38px;
+        height: 38px;
+        right: 15px;
+        top: 15px;
+        font-size: 18px;
+    }
+
+    .work-info {
+        padding: 15px;
+    }
+
+    .work-info span {
+        font-size: 14px;
+        padding: 5px 12px;
+    }
+
+    .work-info h2 {
+        font-size: 18px;
+    }
+
+    /* FOOTER */
+
+    .footer-container {
+        width: 90%;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 50px 0 25px;
+    }
+
+    .footer-column h2 {
+        font-size: 19px;
+    }
+
+    .footer-column > p {
+        font-size: 15px;
+    }
+
+    .footer-column ul li a {
+        font-size: 15px;
+    }
+
+    /* SOCIAL ICONS */
+
+    .footer-social {
+        gap: 20px;
+        margin-top: 25px;
+    }
+
+    .footer-social a {
+        font-size: 30px;
+    }
+
+    /* CONTACT */
+
+    .contact-item {
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .contact-item span {
+        font-size: 18px;
+    }
+
+    .contact-item p {
+        font-size: 15px;
+    }
+
+    /* COPYRIGHT */
+
+    .copyright {
+        padding: 25px 15px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background:  #fff;
+    color: black;
+    line-height: 1.6;
+}
+
+.techcare-home {
+    background-color: rgb(71 85 105);
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+}
+
+.tech h1 {
+    text-align: center;
+    color: white;
+}
+
+.tech p {
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.project-content {
+    display:flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.project {
+    padding: 35px 0 100px;
+}
+
+.project-content img {
+    width: 65%;
+    height: 50%;
+    border-radius: 10px;
+}
+
+.project-content h1 {
+    display: flex;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background: #111111;
+    color: white;
+}
+
+/* ================= FOOTER CONTAINER ================= */
+.footer-container {
+    width: 88%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr 1.1fr;
+    gap: 70px;
+    padding: 70px 0 30px;
+}
+
+/* ================= COLUMN HEADINGS ================= */
+.footer-column h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer-line {
+    width: 62px;
+    height: 5px;
+    background: #ff480f;
+    margin-top: 12px;
+    margin-bottom: 25px;
+}
+
+/* ================= ABOUT TEXT ================= */
+.footer-column > p {
+    color: #d1d1d1;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    max-width: 500px;
+}
+
+/* ================= USEFUL LINKS ================= */
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 18px;
+}
+
+.footer-column ul li a {
+    color: #d1d1d1;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-column ul li a::before {
+    content: "›";
+    color: orangered;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.footer-column ul li a:hover {
+    color: orangered;
+}
+
+/* ================= SOCIAL ICONS ================= */
+.footer-social {
+    display: flex;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.footer-social a {
+    text-decoration: none;
+    font-size: 35px;
+}
+
+.whatsapp-icon {
+    color: #20d66b;
+}
+
+.close-icon {
+    color: #aaaaaa;
+}
+
+/* ================= CONTACT INFO ================= */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.contact-item span {
+    color: orangered;
+    font-size: 20px;
+    width: 23px;
+}
+
+.contact-item p {
+    margin: 0;
+    color: #d1d1d1;
+    font-size: 20px;
+}
+
+/* ================= COPYRIGHT ================= */
+.copyright {
+    border-top: 1px solid #292929;
+    text-align: center;
+    padding: 32px;
+    color: #bdbdbd;
+    font-size: 20px;
+}

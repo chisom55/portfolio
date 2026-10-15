@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background:  #fff;
+    color: black;
+    line-height: 1.6;
+}
+
+.myxellia-home {
+    background-color: rgb(71 85 105);
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+}
+
+.myxe h1 {
+    text-align: center;
+    color: white;
+}
+
+.myxe p {
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
