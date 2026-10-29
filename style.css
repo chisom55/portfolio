@@ -914,10 +914,10 @@ h1 {
     color: orangered;
 }
 
-/* INPUTS */
-input,
-select,
-textarea {
+/* CONTACT FORM INPUTS */
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
     width: 100%;
     border: 1px solid #dddddd;
     border-radius: 12px;
@@ -927,20 +927,22 @@ textarea {
     outline: none;
 }
 
-input,
-select {
+/* CONTACT FORM INPUT AND SELECT */
+.contact-form input,
+.contact-form select {
     height: 57px;
     padding: 0 15px;
 }
 
-input:focus,
-select:focus,
-textarea:focus {
+/* CONTACT FORM FOCUS */
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
     border-color: orangered;
 }
 
-/* SELECT */
-select {
+/* CONTACT FORM SELECT */
+.contact-form select {
     color: #242832;
     cursor: pointer;
 }
