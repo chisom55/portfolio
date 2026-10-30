@@ -75,6 +75,25 @@ header{
     
 }
 
+/* ===== HAMBURGER MENU ===== */
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    width: 30px;
+    text-align: center;
+    font-size: 28px;
+    line-height: 1;
+    color: #1a1a1a;
+    cursor: pointer;
+}
+
+.hamburger .close-icon {
+    display: none;
+}
+
 .contact {
     width: 5rem;
     margin: 2px auto 30px;
@@ -1231,22 +1250,57 @@ button:hover {
 
     /* ===== NAVIGATION ===== */
     .nav {
-        padding: 10px 0;
-    }
-
-    .links {
-        gap: 18px;
-    }
-
-    .links a,
-    .links select {
-        font-size: 14px;
+        padding: 10px 25px;
     }
 
     .mylogo {
         width: 60px;
         height: 60px;
         margin-right: 10px;
+    }
+
+    .nav .btn {
+        order: 2;
+        margin-left: auto;
+    }
+
+    .hamburger {
+        display: block;
+        order: 3;
+        margin-left: 18px;
+    }
+
+    .links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background-color: #f4f4f6;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .links a,
+    .links select {
+        padding: 14px 25px;
+        border-top: 1px solid #e2e2e6;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .menu-toggle:checked ~ .links {
+        display: flex;
+    }
+
+    .menu-toggle:checked + .hamburger .open-icon {
+        display: none;
+    }
+
+    .menu-toggle:checked + .hamburger .close-icon {
+        display: inline;
     }
 
     /* ===== HERO ===== */
@@ -1408,29 +1462,21 @@ button:hover {
     }
 
     .nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 10px 15px;
+        padding: 10px 18px;
     }
 
     .mylogo {
-        width: 55px;
-        height: 55px;
-        margin-right: 10px;
-    }
-
-    .links {
-        width: 100%;
-        order: 2;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 10px 15px;
-        margin-top: 10px;
+        width: 50px;
+        height: 50px;
     }
 
     .links a,
     .links select {
-        font-size: 13px;
+        padding: 14px 18px;
+    }
+
+    body {
+        padding-bottom: 60px;
     }
 
     .btn {
@@ -1475,7 +1521,7 @@ button:hover {
     .social {
         right: 8px;
         top: auto;
-        bottom: 80px;
+        bottom: 125px;
         gap: 8px;
     }
 
@@ -1502,11 +1548,23 @@ button:hover {
     /* ===== TOP BUTTON ===== */
 
     .top {
-        right: 12px;
-        bottom: 125px;
-        width: 42px;
-        height: 42px;
+        right: 8px;
+        bottom: 75px;
+        width: 38px;
+        height: 38px;
         font-size: 18px;
+    }
+
+    /* ===== CALL / WHATSAPP BAR ===== */
+
+    .contact {
+        gap: 10px;
+        margin-bottom: 12px;
+    }
+
+    .contact a {
+        padding: 10px 14px;
+        font-size: 14px;
     }
 
 
@@ -1617,6 +1675,42 @@ button:hover {
 
     .step-arrow {
         display: none;
+    }
+
+    .how-i-work {
+        min-height: auto;
+        padding: 55px 15px;
+    }
+
+    .work-header h2 {
+        font-size: 28px;
+    }
+
+    .work-header h2 br {
+        display: none;
+    }
+
+    .orange-line {
+        margin: 20px auto 40px;
+    }
+
+    .work-steps {
+        justify-content: space-around;
+        gap: 10px;
+    }
+
+    .work-step {
+        min-width: 0;
+    }
+
+    .step-number {
+        width: 55px;
+        height: 55px;
+        font-size: 16px;
+    }
+
+    .work-step h3 {
+        font-size: 15px;
     }
 
     .stage-numb,
@@ -1890,15 +1984,6 @@ button:hover {
 
 @media (max-width: 400px) {
 
-    .links {
-        gap: 8px 10px;
-    }
-
-    .links a,
-    .links select {
-        font-size: 12px;
-    }
-
     .btn {
         padding: 8px 11px;
         font-size: 12px;
@@ -1927,19 +2012,9 @@ button:hover {
         font-size: 11px;
     }
 
-    .social {
-        right: 5px;
-    }
-
     .social a {
         width: 34px;
         height: 34px;
-    }
-
-    .top {
-        width: 38px;
-        height: 38px;
-        right: 8px;
     }
 
     .contact-section {

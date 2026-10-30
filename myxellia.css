@@ -28,3 +28,20 @@ body {
     font-size: 1.2rem;
     margin-top: 10px;
 }
+
+/* ================= PHONE ================= */
+
+@media (max-width: 600px) {
+
+    .myxellia-home {
+        padding: 4rem 15px 6rem;
+    }
+
+    .myxe h1 {
+        font-size: 2rem;
+    }
+
+    .myxe p {
+        font-size: 1rem;
+    }
+}
